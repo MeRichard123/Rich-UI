@@ -1,0 +1,107 @@
+$dark: #515151;
+$light: rgba(224, 219, 219, 0.933);
+$primary: #0984e3;
+$warning: #e84118;
+$success: #4cd137;
+$border-width: 2px;
+
+.btn {
+  padding: 0.8rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  border: $border-width solid $light;
+  transition: all 250ms ease-in-out;
+  color: $dark;
+  &:hover {
+    color: rgba($color: $dark, $alpha: 0.5);
+  }
+  &--rounded {
+    border-radius: 15px;
+  }
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.btn__dark {
+  color: white;
+  background: $dark;
+  transition: all 250ms ease-in-out;
+  border: $border-width solid transparent;
+  &--plain {
+    background-color: white;
+    color: $dark;
+    border: $border-width solid $dark;
+    &:hover {
+      background-color: $dark;
+      color: white;
+    }
+  }
+  &:hover {
+    color: $dark;
+    border: $border-width solid $dark;
+    background: white;
+  }
+}
+.btn__primary {
+  color: white;
+  background: $primary;
+  border: $border-width solid transparent;
+  transition: all 250ms ease-in-out;
+  &--plain {
+    background-color: white;
+    color: $primary;
+    border: $border-width solid $primary;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+  &:hover {
+    color: $primary;
+    background-color: white;
+    border-color: $primary;
+  }
+}
+.btn__warning {
+  color: white;
+  border: $border-width solid transparent;
+  background: $warning;
+  transition: all 250ms ease-in-out;
+  &--plain {
+    background-color: white;
+    color: $warning;
+    border: $border-width solid $warning;
+    &:hover {
+      background-color: $warning;
+      color: white;
+    }
+  }
+  &:hover {
+    color: $warning;
+    background-color: white;
+    border-color: $warning;
+  }
+}
+
+.btn__success {
+  color: white;
+  background-color: $success;
+  border: $border-width solid transparent;
+  transition: all 250ms ease-in-out;
+  &--plain {
+    background-color: white;
+    color: $success;
+    border: $border-width solid $success;
+    &:hover {
+      background-color: $success;
+      color: white;
+    }
+  }
+  &:hover {
+    color: $success;
+    background: white;
+    border-color: $success;
+  }
+}

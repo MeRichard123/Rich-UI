@@ -1,0 +1,219 @@
+.btn {
+  padding: 0.8rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgba(224, 219, 219, 0.933);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  color: #515151;
+}
+
+.btn:hover {
+  color: rgba(81, 81, 81, 0.5);
+}
+
+.btn--rounded {
+  border-radius: 15px;
+}
+
+.btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn__dark {
+  color: white;
+  background: #515151;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn__dark--plain {
+  background-color: white;
+  color: #515151;
+  border: 2px solid #515151;
+}
+
+.btn__dark--plain:hover {
+  background-color: #515151;
+  color: white;
+}
+
+.btn__dark:hover {
+  color: #515151;
+  border: 2px solid #515151;
+  background: white;
+}
+
+.btn__primary {
+  color: white;
+  background: #0984e3;
+  border: 2px solid transparent;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn__primary--plain {
+  background-color: white;
+  color: #0984e3;
+  border: 2px solid #0984e3;
+}
+
+.btn__primary--plain:hover {
+  background-color: #0984e3;
+  color: white;
+}
+
+.btn__primary:hover {
+  color: #0984e3;
+  background-color: white;
+  border-color: #0984e3;
+}
+
+.btn__warning {
+  color: white;
+  border: 2px solid transparent;
+  background: #e84118;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn__warning--plain {
+  background-color: white;
+  color: #e84118;
+  border: 2px solid #e84118;
+}
+
+.btn__warning--plain:hover {
+  background-color: #e84118;
+  color: white;
+}
+
+.btn__warning:hover {
+  color: #e84118;
+  background-color: white;
+  border-color: #e84118;
+}
+
+.btn__success {
+  color: white;
+  background-color: #4cd137;
+  border: 2px solid transparent;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn__success--plain {
+  background-color: white;
+  color: #4cd137;
+  border: 2px solid #4cd137;
+}
+
+.btn__success--plain:hover {
+  background-color: #4cd137;
+  color: white;
+}
+
+.btn__success:hover {
+  color: #4cd137;
+  background: white;
+  border-color: #4cd137;
+}
+
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 500px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+  justify-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.card-container .card {
+  width: 80%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card-container .card--rounded {
+  border-radius: 15px;
+}
+
+.card-container .card--rounded .card__icon {
+  border-radius: 15px;
+}
+
+.card-container .card .card__icon {
+  background: #515151;
+  padding: 1.5rem;
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 6rem;
+}
+
+.card-container .card .card__image {
+  background: #515151;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 6rem;
+}
+
+.card-container .card .card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-container .card .card__content .card__content__title {
+  text-align: center;
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+.card-container .card .card__content .card__desc {
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+}
+
+.card-container .card .card__content .btn {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+body {
+  margin-top: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */
