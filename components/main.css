@@ -213,7 +213,166 @@
   margin-bottom: 10px;
 }
 
+.form-modern {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-modern input,
+.form-modern textarea {
+  margin: 10px;
+}
+
+.form-modern .field {
+  padding: 1.2rem 2.5rem;
+  border: 2px solid #515151;
+}
+
+.form-modern .field:first-child {
+  border-top-left-radius: 50px;
+  border-radius: 30px 30px 0 0;
+}
+
+.form-modern .field__message {
+  height: 250px;
+  padding: 1.2rem 2.5rem;
+  border: 2px solid #515151;
+  border-radius: 0 0 30px 30px;
+}
+
+.form-modern .submit-btn {
+  padding: 1rem 1.4rem;
+  background: #999999;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  -webkit-transition: all 50ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: all 50ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.form-modern .submit-btn:hover {
+  background-color: #515151;
+}
+
+.form-modern .submit-btn:focus {
+  background-color: #515151;
+  outline: none;
+}
+
+.form-modern .field:focus,
+.form-modern .field__message:focus {
+  outline: 3.5px solid #515151;
+}
+
+.form-simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-simple .button {
+  width: 100%;
+  color: white;
+  padding: 10px;
+  border: 0;
+  font-size: 1.2rem;
+  background-color: #515151;
+}
+
+.form-simple .button:hover {
+  opacity: 0.75;
+}
+
+.form-simple input,
+.form-simple textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.form-simple label {
+  font-size: 1.2rem;
+  margin: 15px 5px;
+}
+
+.form-simple input:focus,
+.form-simple textarea:focus {
+  outline: 3.5px solid lightgray;
+  -moz-outline-radius: 10px;
+  -webkit-outline-radius: 10px;
+}
+
+.subscribe {
+  margin: 15px 0;
+}
+
+.subscribe .email {
+  padding: 15px;
+  border: 2px soild gray;
+}
+
+.subscribe .button {
+  padding: 15px;
+  color: white;
+  border: 0;
+  background-color: #0984e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  margin-top: 2.5rem;
+  /* Stop scrolling when nav off screen   */
+  overflow-x: hidden;
+}
+
+.image {
+  width: 60%;
+  min-width: calc(1vw + 300px);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

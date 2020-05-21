@@ -10,6 +10,20 @@
     />
     <title>Document</title>
   </head>
+  <!-- <header class="nav_small">
+    <h2 class="logo">Logo</h2>
+    <div class="burger">
+      <div class="hamburger"></div>
+    </div>
+    <nav>
+      <ul class="nav-items close">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-item">Blog</li>
+        <li class="nav-item">Prices</li>
+      </ul>
+    </nav>
+  </header> -->
   <body>
     <h1>Regular</h1>
     <a href="" class="btn">Default</a>
@@ -90,6 +104,68 @@
         </div>
       </div>
     </section>
+    <!-- <section class="navs">
+      <header class="nav_large">
+        <nav>
+          <input type="checkbox" id="chk" />
+          <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#">Work</a></li>
+            <li class="nav-item"><a href="#">Gallery</a></li>
+            <label for="chk" class="hide-menu-btn">
+              <i class="fas fa-times"></i>
+            </label>
+          </ul>
+        </nav>
+      </header>
+    </section> -->
+    <section class="forms flex-container">
+      <form action="" method="POST" class="form-modern">
+        <input
+          type="text"
+          placeholder="Name:"
+          class="field"
+          id="name"
+          title="Name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email:"
+          title="Email"
+          class="field"
+          required
+        />
+        <textarea
+          id=""
+          title="Message"
+          cols="30"
+          rows="10"
+          placeholder="Message:"
+          aria-placeholder="message text"
+          class="field__message"
+        ></textarea>
+        <input type="submit" value="Submit" class="submit-btn" />
+      </form>
+      <form action="" class="form-simple">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="" />
+        <label for="email">E-Mail:</label>
+        <input type="email" name="_replyto" required />
+        <label for="message">Message:</label>
+        <textarea name="message" id="" cols="50" rows="10"></textarea>
+        <input type="submit" value="Send" class="button" />
+      </form>
+      <form action="" class="subscribe">
+        <input type="text" placeholder="Email" class="email" />
+        <input type="submit" value="Subscribe" class="button" />
+      </form>
+    </section>
   </body>
   <style>
     @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
@@ -98,4 +174,5 @@
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script src="./script.js"></script>
 </html>

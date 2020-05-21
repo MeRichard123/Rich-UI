@@ -1,5 +1,28 @@
 @import "./buttons";
 @import "./cards";
+// @import "./navs";
+@import "./forms";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  margin-top: 2.5rem;
+  /* Stop scrolling when nav off screen   */
+  overflow-x: hidden;
+}
+.image {
+  width: 60%;
+  min-width: calc(1vw + 300px);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

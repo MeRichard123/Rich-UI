@@ -1,0 +1,227 @@
+.nav_large {
+  nav {
+    background: rgb(32, 26, 26);
+    height: 50px;
+  }
+
+  .nav-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    align-content: center;
+  }
+  .nav-item {
+    text-align: center;
+    justify-self: center;
+    list-style: none;
+  }
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-item:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s ease-in-out;
+  }
+  .show-menu-btn,
+  .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+  .show-menu-btn {
+    float: right;
+  }
+  .hide-menu-btn:hover {
+    color: gray;
+  }
+  #chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav_large {
+      .show-menu-btn,
+      .hide-menu-btn {
+        display: block;
+      }
+      .show-menu-btn:hover {
+        color: gray;
+      }
+      .nav-items {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+      }
+      .nav-items a {
+        display: block;
+        padding: 20px;
+      }
+      .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+      .show-menu-btn {
+        padding: 5px 10px 0 0;
+      }
+      #chk:checked ~ .nav-items {
+        right: 0;
+      }
+    }
+  }
+}
+.nav_small {
+  background: tomato;
+  min-height: 10vh;
+  display: flex;
+  .logo {
+    color: white;
+    align-self: center;
+    padding: 0 10px;
+  }
+  /* Alining nav to the right and moving it off screen */
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    background: #515151;
+    justify-content: center;
+    right: 0;
+    top: 10vh;
+    width: 30%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform cubic-bezier(0.1, 0.2, 0.8, 1) 250ms 0.2s;
+  }
+  /* Style individual items */
+  .nav-item {
+    position: relative;
+    list-style: none;
+    margin-left: 1rem;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1.5rem;
+    transition: transform cubic-bezier(0.1, 0.2, 0.8, 1) 250ms;
+  }
+  /* Add spacing */
+  .nav-item:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  /* The Line animation */
+  .nav-item::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  /* ^line animation hover */
+
+  /* Burger Styles */
+  .burger {
+    position: absolute;
+    right: 1px;
+    padding: 1.5rem 2rem;
+    transition: all ease-in-out 500ms;
+  }
+  .hamburger {
+    width: 2.45rem;
+    background: #fff;
+    height: 3px;
+    position: relative;
+    transition: all ease-in-out 500ms;
+    border-radius: 3px;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 2.45rem;
+    border-radius: 3px;
+    background: #fff;
+    transition: all ease-in-out 500ms;
+  }
+  .hamburger::before {
+    transform: translateY(-9px);
+  }
+  .hamburger::after {
+    transform: translateY(9px);
+  }
+  /* Main burger end */
+
+  /* Burger States */
+  .open .hamburger {
+    transform: rotate(45deg);
+  }
+
+  .open .hamburger::before {
+    opacity: 0;
+  }
+  .open .hamburger::after {
+    transform: rotate(-90deg);
+  }
+  .close {
+    transform: translateX(100%);
+    /*   pointer-events: none;
+        user-select: none; */
+  }
+  /* End of burger states */
+  #div {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 607px) {
+    .nav-items {
+      transition: transform cubic-bezier(0.1, 0.2, 0.8, 1) 500ms 0.2s;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .burger {
+      display: none;
+    }
+    header {
+      justify-content: space-between;
+    }
+    .nav-items {
+      transform: translate(0, 0);
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      background: none;
+      color: white;
+      top: 0;
+      width: 100%;
+    }
+    .nav-item {
+      margin: 0 20px !important;
+    }
+  }
+}

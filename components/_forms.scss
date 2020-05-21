@@ -1,0 +1,93 @@
+.form-modern {
+  display: flex;
+  flex-direction: column;
+  input,
+  textarea {
+    margin: 10px;
+  }
+  .field {
+    padding: 1.2rem 2.5rem;
+    border: 2px solid #515151;
+  }
+  .field:first-child {
+    border-top-left-radius: 50px;
+    border-radius: 30px 30px 0 0;
+  }
+  .field__message {
+    height: 250px;
+    padding: 1.2rem 2.5rem;
+    border: 2px solid #515151;
+    border-radius: 0 0 30px 30px;
+  }
+  .submit-btn {
+    padding: 1rem 1.4rem;
+    background: #999999;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 50ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    &:hover {
+      background-color: #515151;
+    }
+    &:focus {
+      background-color: #515151;
+      outline: none;
+    }
+  }
+
+  .field:focus,
+  .field__message:focus {
+    outline: 3.5px solid #515151;
+  }
+}
+.form-simple {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  .button {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: #515151;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 1.2rem;
+    margin: 15px 5px;
+  }
+  input:focus,
+  textarea:focus {
+    outline: 3.5px solid lightgray;
+    -moz-outline-radius: 10px;
+    -webkit-outline-radius: 10px;
+  }
+}
+
+.subscribe {
+  margin: 15px 0;
+  .email {
+    padding: 15px;
+    border: 2px soild gray;
+  }
+  .button {
+    padding: 15px;
+    color: white;
+    border: 0;
+    background-color: #0984e3;
+  }
+}
