@@ -1,0 +1,22 @@
+{
+  "name": "rich-ui",
+  "version": "1.0.0",
+  "description": "Light CSS Component Library",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeRichard123/Rich-UI.git"
+  },
+  "keywords": [
+    "css-framework"
+  ],
+  "author": "MeRichard123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeRichard123/Rich-UI/issues"
+  },
+  "homepage": "https://rich-ui.netlify.app/"
+}
